@@ -4,6 +4,8 @@ Author: Kohey
 Description: Powerd by Laravel.
 */
 
+@use 'components/button';
+
 body {
     h1 {
       color: mediumblue;

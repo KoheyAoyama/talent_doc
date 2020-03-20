@@ -11,7 +11,6 @@
     @include('header')
     <main>
       @yield('content')
-      @yield('unko')
     </main>
     @include('footer')
 </body>
