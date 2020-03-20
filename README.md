@@ -1,4 +1,4 @@
-##Installation
+## Installation
 
 1. Go to your wordpress themes folder.
 ```
