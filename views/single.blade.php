@@ -6,12 +6,13 @@
             @while (have_posts())
                 <?php the_post(); ?>
                 <article>
-                    <h1>{{ the_title() }}</h1>
+                    <h3>{{ the_title() }}</h3>
                     <div class="content">
                         {{ the_content() }}
                     </div>
+                    <p>note</p>
                 </article>
             @endwhile
         @endif
     </div>
-    @endsection
+@endsection

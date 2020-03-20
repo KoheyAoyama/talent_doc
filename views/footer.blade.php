@@ -1,3 +1,3 @@
 <footer>
-  This is a footer.
+  お笑い芸人名鑑
 </footer>
