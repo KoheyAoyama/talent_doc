@@ -7,7 +7,7 @@ cd your.wordpress.directly/htdocs/wp-content/themes
 
 1. Clone repository.
 ```
-git clone
+git clone https://github.com/KoheyAoyama/talent_doc.git
 ```
 
 1. Install "Composer", PHP package tool.
