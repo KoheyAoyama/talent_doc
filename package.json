@@ -1,7 +1,6 @@
 {
   "name": "talentdic",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,15 @@
     "laravel-mix": "^5.0.4",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoheyAoyama/talent_doc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoheyAoyama/talent_doc/issues"
+  },
+  "homepage": "https://github.com/KoheyAoyama/talent_doc#readme",
+  "description": ""
 }

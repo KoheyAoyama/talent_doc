@@ -5,7 +5,7 @@
         <?php
             $args = array(
                 'hide_empty' => 0,
-                'title_li' => '芸人リスト',
+                'title_li' => '芸人ども',
                 );
             wp_list_categories( $args );
         ?>
@@ -16,7 +16,6 @@
                 <article>
                     <h3>{{ the_title() }}</h3>
                     <div>{{ the_content() }}</div>
-                    @include('button',['url' => 'https://www.pref.chiba.lg.jp/', 'label' => 'もっと見る', 'btn_style' => 'btn_accent'])
                 </article>
             @endwhile
         @endif
