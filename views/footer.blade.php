@@ -1,4 +1,4 @@
 <footer>
-  某は元気である。
-  <p>Hello world!</p>
+
+  This is a footer.
 </footer>
