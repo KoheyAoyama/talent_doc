@@ -1,3 +1,3 @@
 <footer>
-  いかがでしたか？
+  This is a footer.
 </footer>
