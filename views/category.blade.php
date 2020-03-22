@@ -1,3 +1,5 @@
+@extends('layout')
+
 {{-- Start Getting the category informatoin --}}
 @php
     $categories = get_the_category(); // Get the category information
@@ -11,17 +13,19 @@
 @endphp
 {{-- End Getting the category informatoin --}}
 
-<h1>{{ $category_name }}</h1>
-<img src="{{ $category_img }}" alt="{{ $category_name . "のプロフィール写真" }}">
-<p>{{ $category_description }}</p>
+@section('content')
+    <h1>{{ $category_name }}</h1>
+    <img src="{{ $category_img }}" alt="{{ $category_name . "のプロフィール写真" }}">
+    <p>{{ $category_description }}</p>
 
-@if (have_posts())
-    @while (have_posts())
-        <?php the_post(); ?>
-        <article>
-            <h3>{{ the_title() }}</h3>
-            <div>{{ the_excerpt() }}</div>
-            <div>{{ get_field('rating_latest') }}</div>
-        </article>
-    @endwhile
-@endif
+    @if (have_posts())
+        @while (have_posts())
+            <?php the_post(); ?>
+            <article>
+                <h3>{{ the_title() }}</h3>
+                <div>{{ the_excerpt() }}</div>
+                <div>{{ get_field('rating_latest') }}</div>
+            </article>
+        @endwhile
+    @endif
+@endsection
