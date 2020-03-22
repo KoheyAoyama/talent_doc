@@ -29,7 +29,8 @@
                     @endphp
                     <h3>{{ the_title() }}</h3>
                     <div>{{ the_excerpt() }}</div>
-                    <div>{{ get_field('talent_rating') }}</div>
+                    <div>{{ get_field('rating_latest') }}</div>
+                    <a href="{{ get_category_link( $cat_id ) }}">cagetory_name</a>
                 </article>
             @endwhile
         @endif
