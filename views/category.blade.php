@@ -10,8 +10,11 @@
 
         //Get category name.
         $cat_name = $category->name;
+
+        $cat_description = $category->description;
     }
 @endphp
 
 <h1>{{ $cat_name }}</h1>
 <img src="{{ $cat_img }}" alt="">
+<p>{{ $cat_description }}</p>
