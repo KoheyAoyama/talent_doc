@@ -25,3 +25,7 @@ function custom_excerpt_length( $length ) {
     return 140;	
 }	
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function get_category_img( $category_id ) {
+    return wp_get_attachment_image_src(get_field('category_img', 'category_'. $category_id), 'full')[0];
+}
