@@ -4,9 +4,19 @@
         $category_id = $category->cat_ID;
         $category_img = get_category_img( $category_id );
         $category_name = $category->name;
-        $category_description = $category->description;   
+        $category_description = $category->description;
 @endphp
 {{-- End Getting the category informatoin --}}
+
+{{-- Start get rating condition --}}
+@php
+if ( get_field('rating_latest') ) {
+    $rating = get_field('rating_latest');
+} else {
+    $rating = "未評価";
+}
+@endphp
+{{-- End get rating condition --}}
 
 @extends('layout')
 
@@ -17,7 +27,7 @@
     <p>{{ $category_description }}</p>
 
     <div>
-        <p>評価：{{ get_field('rating_latest') }}</p>
+        <p>最新の評価：{{ $rating }}</p>
         <p>所属事務所：{{ get_field('talent_office', 'category_'. $category_id) }}</p>
     </div>
 
