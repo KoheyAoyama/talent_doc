@@ -29,6 +29,7 @@
                     @endphp
                     <h3>{{ the_title() }}</h3>
                     <div>{{ the_excerpt() }}</div>
+                    <div>{{ get_field('talent_rating') }}</div>
                 </article>
             @endwhile
         @endif
