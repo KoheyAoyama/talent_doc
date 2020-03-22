@@ -1,5 +1,3 @@
-@extends('layout')
-
 {{-- Start Getting the category informatoin --}}
 @php
     $category = get_queried_object(); // Get the current page's infromation.
@@ -9,6 +7,8 @@
         $category_description = $category->description;   
 @endphp
 {{-- End Getting the category informatoin --}}
+
+@extends('layout')
 
 @section('content')
     <h1>{{ $category_name }}</h1>
