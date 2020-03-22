@@ -1,5 +1,6 @@
+{{-- Start Getting the category informatoin --}}
 @php
-    $categories = get_the_category(); // Get the category information of curent post as array.
+    $categories = get_the_category(); // Get the category information
 
     foreach ($categories as $category) {
         //Get the category image.
@@ -14,6 +15,7 @@
         $cat_description = $category->description;
     }
 @endphp
+{{-- End Getting the category informatoin --}}
 
 <h1>{{ $cat_name }}</h1>
 <img src="{{ $cat_img }}" alt="{{ $cat_name . "のプロフィール写真" }}">
