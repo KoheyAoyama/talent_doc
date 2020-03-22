@@ -28,7 +28,7 @@
                         }
                     @endphp
                     <h3>{{ the_title() }}</h3>
-                    <div>{{ the_content() }}</div>
+                    <div>{{ the_excerpt() }}</div>
                 </article>
             @endwhile
         @endif

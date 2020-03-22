@@ -15,3 +15,13 @@ if (!function_exists('render_blade')) {
         return $blade->make($template_name);
     }
 }
+
+function new_excerpt_more($more) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function custom_excerpt_length( $length ) {
+    return 140;	
+}	
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
