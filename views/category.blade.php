@@ -21,3 +21,14 @@
 <h1>{{ $cat_name }}</h1>
 <img src="{{ $cat_img }}" alt="{{ $cat_name . "のプロフィール写真" }}">
 <p>{{ $cat_description }}</p>
+
+@if (have_posts())
+    @while (have_posts())
+        <?php the_post(); ?>
+        <article>
+            <h3>{{ the_title() }}</h3>
+            <div>{{ the_excerpt() }}</div>
+            <div>{{ get_field('rating_latest') }}</div>
+        </article>
+    @endwhile
+@endif
