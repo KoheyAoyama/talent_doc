@@ -19,7 +19,6 @@
 
                         foreach ($categories as $category) {
                             $category_id = $category->cat_ID;
-                            $category_img = wp_get_attachment_image_src(get_field('category_img', 'category_'. $category->cat_ID), 'full')[0];
                             $category_name = $category->name;
                         }
                     @endphp
