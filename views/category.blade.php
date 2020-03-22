@@ -16,5 +16,5 @@
 @endphp
 
 <h1>{{ $cat_name }}</h1>
-<img src="{{ $cat_img }}" alt="">
+<img src="{{ $cat_img }}" alt="{{ $cat_name . "のプロフィール写真" }}">
 <p>{{ $cat_description }}</p>
