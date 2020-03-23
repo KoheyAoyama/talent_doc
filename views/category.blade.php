@@ -18,6 +18,10 @@ if ( get_field('rating_latest') ) {
 @endphp
 {{-- End get rating condition --}}
 
+@php
+    $award_history = get_field('award_history', 'category_'. $category_id);
+@endphp
+
 @extends('layout')
 
 @section('content')
@@ -29,6 +33,14 @@ if ( get_field('rating_latest') ) {
     <div>
         <p>最新の評価：{{ $rating }}</p>
         <p>所属事務所：{{ get_field('talent_office', 'category_'. $category_id) }}</p>
+        <div>
+            <p>受賞履歴</p>
+            <p>
+                @php
+                    echo nl2br($award_history);
+                @endphp
+            </p>
+        </div>
     </div>
 
     <section>
