@@ -20,6 +20,9 @@ if ( get_field('rating_latest') ) {
 
 @php
     $award_history = get_field('award_history', 'category_'. $category_id);
+    $date_of_debut = get_field('talent_date_of_debut', 'category_'. $category_id);
+
+    $termchildrens = get_term_children( $category_id, 'category' );
 @endphp
 
 @extends('layout')
@@ -31,8 +34,18 @@ if ( get_field('rating_latest') ) {
     <p>{{ $category_description }}</p>
 
     <div>
+        @php
+            foreach ( $termchildrens as $termchildren ) {
+                $term = get_term_by( 'id', $termchildren, 'category' );
+                echo '<li><a href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
+            }
+        @endphp
+    </div>
+
+    <div>
         <p>最新の評価：{{ $rating }}</p>
         <p>所属事務所：{{ get_field('talent_office', 'category_'. $category_id) }}</p>
+        <p>デビュー：{{ $date_of_debut }}</p>
         <div>
             <p>受賞履歴</p>
             <p>
