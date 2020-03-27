@@ -32,7 +32,7 @@
     if ( get_field('rating_latest') ) {
         $rating_latest = get_field('rating_latest');
     } else {
-        $rating_latest = '評価がありません';
+        $rating_latest = '未評価';
     }
 @endphp
 
