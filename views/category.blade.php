@@ -16,7 +16,6 @@
         $placeholder_id = $placeholder_img_data->ID;
         $profile_img = wp_get_attachment_image_src( $placeholder_id, 'full')[0];
     }
-    var_dump($profile_img);
 
     // Desicion for talent raging.
     if ( get_field('rating_latest') ) {
