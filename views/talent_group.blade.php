@@ -60,7 +60,6 @@
                     @endphp
                 </div>
             @endif
-            
         </div>
     </section>
 
