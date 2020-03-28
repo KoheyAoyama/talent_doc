@@ -1,5 +1,5 @@
 @php
-    $args = array(
+    $args_get_talent_list = array(
         'type'                     => 'post',
         'child_of'                 => '',
         'parent'                   => '0',
@@ -13,7 +13,7 @@
         'taxonomy'                 => 'category',
         'pad_counts'               => false 
     );
-    $talent_list = get_categories( $args );
+    $talent_list = get_categories( $args_get_talent_list );
 @endphp
 
 @extends('layout')
@@ -25,10 +25,36 @@
         @php
             $talent_id = $talent->cat_ID;
             $talent_name = $talent->name;
-            $members = get_term_children( $talent_id, 'category' );
             $profile_img = get_category_img( $talent_id );
             $office = get_field('talent_office', 'category_'. $talent_id);
-            
+
+            // Get rating_latest value by getting latest post of the talent.
+            $args_get_latest_post = array(
+                'posts_per_page'   => 1,
+                'offset'           => 0,
+                'category'         => $talent_id,
+                'category_name'    => '',
+                'orderby'          => 'date',
+                'order'            => 'DESC',
+                'include'          => '',
+                'exclude'          => '',
+                'meta_key'         => '',
+                'meta_value'       => '',
+                'post_type'        => 'post',
+                'post_mime_type'   => '',
+                'post_parent'      => '',
+                'author'	       => '',
+                'post_status'      => 'publish',
+                'suppress_filters' => true 
+            );
+            $latest_post = get_posts( $args_get_latest_post );
+            $latest_post_id = $latest_post[0]->ID;
+            if ( get_field('rating_latest', $latest_post_id) ) {
+                $rating_latest = get_field('rating_latest', $latest_post_id);
+            } else {
+                $rating_latest = '未評価';
+            }
+
             // Desicion for profile image exists.
             if ( $profile_img ) {
             } else {
@@ -36,35 +62,19 @@
                 $placeholder_id = $placeholder_img_data->ID;
                 $profile_img = wp_get_attachment_image_src( $placeholder_id, 'full')[0];
             }
-            // Desicion for office value exists.
-            if ( $office ) {
-            } else {
-                $office = '未設定';
-            }
-            // Desicion for date of debut value exists.
-            if ( $date_of_debut ) {
-            } else {
-                $date_of_debut = '不明';
-            }
-            // Desicion for talent raging.
-            if ( get_field('rating_latest') ) {
-                $rating_latest = get_field('rating_latest');
-            } else {
-                $rating_latest = '未評価';
-            }
         @endphp
         
-        <section>
-            <h2>
-                <a href="{{ get_category_link( $talent_id ) }}">{{ $talent_name }}</a>
-            </h2>
-            <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-            <dl>
-                <dt>最新の評価：</dt>
-                <dd>{{ $rating_latest }}</dd>
-                <dt>所属事務所：</dt>
-                <dd>{{ $office }}</dd>
-            </dl>
-        </section>
+        <article>
+            <a href="{{ get_category_link( $talent_id ) }}">
+                <div>
+                    <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
+                    <h2>{{ $talent_name }}</h2>
+                    <p>{{ $rating_latest }}</p>
+                    @if ( $office )
+                        <p>{{ $office }}</p>
+                    @endif
+                </div>
+            </a>
+        </article>
     @endforeach
 @endsection
