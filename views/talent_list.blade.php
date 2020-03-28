@@ -7,7 +7,7 @@
         'order'                    => 'ASC',
         'hide_empty'               => 0,
         'hierarchical'             => 1,
-        'exclude'                  => '',
+        'exclude'                  => 1,
         'include'                  => '',
         'number'                   => '',
         'taxonomy'                 => 'category',
