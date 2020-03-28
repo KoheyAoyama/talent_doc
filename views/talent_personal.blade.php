@@ -18,16 +18,7 @@
         $placeholder_id = $placeholder_img_data->ID;
         $profile_img = wp_get_attachment_image_src( $placeholder_id, 'full')[0];
     }
-    // Desicion for office value exists.
-    if ( $office ) {
-    } else {
-        $office = '未設定';
-    }
-    // Desicion for date of debut value exists.
-    if ( $date_of_debut ) {
-    } else {
-        $date_of_debut = '不明';
-    }
+    
     // Desicion for talent raging.
     if ( get_field('rating_latest') ) {
         $rating_latest = get_field('rating_latest');
@@ -41,25 +32,18 @@
 @section('content')
 
     <section>
-        <h1>{{ $talent_name }}</h1>
         <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-        <dl>
-            @php
-                if ( $biography ) {
-                    echo '<dt>プロフィール</dt><dd>' . $biography . '</dd>';
-                } else { }
-            @endphp
-            <dt>所属グループ：</dt>
-            <dd>
-                <a href="{{ $group_link }}.">{{ $group_name }}</a>
-            </dd>
-            <dt>最新の評価：</dt>
-            <dd>{{ $rating_latest }}</dd>
-            <dt>所属事務所：</dt>
-            <dd>{{ $office }}</dd>
-            <dt>デビュー：</dt>
-            <dd>{{ $date_of_debut }}</dd>
-        </dl>
+        <h1>{{ $talent_name }}</h1>
+        <a href="{{ $group_link }}.">{{ $group_name }}</a>
+        <div>{{ $rating_latest }}</div>
+        <div>
+            @if ( $biography )
+                <p>{{ $biography }}</p>
+            @endif
+            @if ( $office )
+                <p>{{ $office }}</p>
+            @endif
+        </div>
     </section>
 
     <section>
