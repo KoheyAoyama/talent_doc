@@ -17,7 +17,7 @@ if (!function_exists('render_blade')) {
 }
 
 function new_excerpt_more($more) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+	return '<br/>もっとみる';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
