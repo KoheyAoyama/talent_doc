@@ -6,7 +6,7 @@
 
 <header>
   <nav>
-    <a href="/">{{ bloginfo('name') }}</a>
+    <a href="{{ home_url() }}">{{ bloginfo('name') }}</a>
     <a href="{{ $permalink }}">{{ $page_name }}</a>
   </nav>
 </header>
