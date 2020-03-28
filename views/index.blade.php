@@ -2,13 +2,16 @@
 
 @section('content')
     <div class="container">
-        <?php
+        {{--
+        @php
             $args = array(
                 'hide_empty' => 0,
                 'title_li' => '芸人ども',
                 );
             wp_list_categories( $args );
-        ?>
+        @endphp
+        --}}
+
         <h2>最新の投稿</h2>
         @if (have_posts())
             @while (have_posts())
