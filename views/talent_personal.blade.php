@@ -30,7 +30,6 @@
 @extends('layout')
 
 @section('content')
-
     <section>
         <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
         <h1>{{ $talent_name }}</h1>
@@ -61,5 +60,4 @@
             <p>投稿はありません</p>
         @endif
     </section>
-
 @endsection
