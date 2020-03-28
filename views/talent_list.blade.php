@@ -25,7 +25,6 @@
         @php
             $talent_id = $talent->cat_ID;
             $talent_name = $talent->name;
-            $biography = $talent->description;
             $members = get_term_children( $talent_id, 'category' );
             $profile_img = get_category_img( $talent_id );
             $office = get_field('talent_office', 'category_'. $talent_id);
@@ -56,14 +55,11 @@
         @endphp
         
         <section>
-            <h2>{{ $talent_name }}</h2>
+            <h2>
+                <a href="{{ get_category_link( $talent_id ) }}">{{ $talent_name }}</a>
+            </h2>
             <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-
             <dl>
-                @if ( $biography )
-                    <dt>プロフィール</dt><dd>{{ $biography }}</dd>
-                @else
-                @endif
                 <dt>最新の評価：</dt>
                 <dd>{{ $rating_latest }}</dd>
                 <dt>所属事務所：</dt>
