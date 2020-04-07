@@ -4,11 +4,7 @@ Author: Kohey
 Description: Powerd by Laravel.
 */
 
-@import "foundation/_reset";
+@use "foundation/reset";
+@use "foundation/base";
 
-body {
-    h1 {
-      color: mediumblue;
-      font-size: 64px;
-    }
-  }
+@use "object/component/unko";
