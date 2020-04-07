@@ -4,7 +4,7 @@ Author: Kohey
 Description: Powerd by Laravel.
 */
 
-@use 'components/button';
+@import "foundation/_reset";
 
 body {
     h1 {
