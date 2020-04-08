@@ -1,0 +1,39 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-header {
+    height: variables.$header_height;
+    background-color: colors.$theme_main;
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title-text {
+        display: block;
+        margin: 0 0 0 16px;
+        font-family: 'Bowlby One SC', cursive;
+        font-size: 3.4rem;
+        color: colors.$white_100;
+        text-decoration: none;
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__nav-text {
+        padding: 0 16px;
+        line-height: variables.$header_height;
+        color: colors.$white_100;
+        text-decoration: none;
+        &:hover{
+            background-color: colors.$white_030;
+        }
+    }
+}

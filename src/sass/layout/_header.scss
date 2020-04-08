@@ -1,0 +1,5 @@
+@use "./foundation/variables";
+
+.l-header {
+    height: variables.$header_height;
+}

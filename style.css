@@ -56,22 +56,6 @@ a {
   vertical-align: baseline;
   background: transparent;
 }
-a:link {
-  text-decoration: none;
-  color: #000000;
-}
-a:visited {
-  text-decoration: none;
-  color: #000000;
-}
-a:hover {
-  text-decoration: none;
-  color: #000000;
-}
-a:active {
-  text-decoration: none;
-  color: #000000;
-}
 
 /* change colours to suit your needs */
 ins {
@@ -125,12 +109,44 @@ body {
   line-height: 2;
 }
 
+.l-header {
+  height: 80px;
+}
+
 /*----------------------------------------
 Colors
 ----------------------------------------*/
-body h1 {
-  color: #3f88c5;
-  font-size: 64px;
+.p-header {
+  height: 80px;
+  background-color: #44617b;
+}
+.p-header__wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-header__title-text {
+  display: block;
+  margin: 0 0 0 16px;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 3.4rem;
+  color: white;
+  text-decoration: none;
+}
+.p-header__nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.p-header__nav-text {
+  padding: 0 16px;
+  line-height: 80px;
+  color: white;
+  text-decoration: none;
+}
+.p-header__nav-text:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*!
@@ -138,3 +154,15 @@ Theme Name: Goodman
 Author: Kohey
 Description: Powerd by Laravel.
 */
+/*----------------------------------------
+Foundation
+----------------------------------------*/
+/*----------------------------------------
+Layout
+----------------------------------------*/
+/*----------------------------------------
+Component
+----------------------------------------*/
+/*----------------------------------------
+Project
+----------------------------------------*/
