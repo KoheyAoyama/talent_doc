@@ -28,6 +28,7 @@
     }
 
     &__nav-text {
+        display: block;
         padding: 0 16px;
         line-height: variables.$header_height;
         color: colors.$white_100;

@@ -140,6 +140,7 @@ Colors
   justify-content: flex-end;
 }
 .p-header__nav-text {
+  display: block;
   padding: 0 16px;
   line-height: 80px;
   color: white;
