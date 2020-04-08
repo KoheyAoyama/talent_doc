@@ -1,0 +1,6 @@
+@use "./foundation/variables";
+
+.l-main {
+    max-width: variables.$content_width_half;
+    margin: 0 auto;
+}

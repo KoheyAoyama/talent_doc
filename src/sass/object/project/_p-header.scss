@@ -6,7 +6,7 @@
     background-color: colors.$theme_main;
 
     &__wrapper {
-        max-width: 1140px;
+        max-width: variables.$content_width_full;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
