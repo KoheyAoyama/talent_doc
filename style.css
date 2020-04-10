@@ -193,18 +193,13 @@ Colors
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.87);
 }
-.p-article-profile__rating {
-  font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.26);
-}
 
 .star-rating {
   position: relative;
   width: 5em;
   height: 1em;
-  font-size: 25px;
+  font-size: 14px;
 }
-
 .star-rating-front {
   position: absolute;
   top: 0;
@@ -212,9 +207,8 @@ Colors
   overflow: hidden;
   color: #ffcc33;
 }
-
 .star-rating-back {
-  color: #ccc;
+  color: rgba(0, 0, 0, 0.12);
 }
 
 /*!

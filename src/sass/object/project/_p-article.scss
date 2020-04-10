@@ -37,28 +37,24 @@
             font-size: 1.4rem;
             color: colors.$dark_087;
         }
-
-        &__rating {
-            font-size: 1.2rem;
-            color: colors.$dark_026;
-        }
     }
 }
 
 .star-rating {
-  position: relative;
-  width: 5em;
-  height: 1em;
-  font-size: 25px;
+    position: relative;
+    width: 5em;
+    height: 1em;
+    font-size: 14px;
 
-}
-.star-rating-front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  color: #ffcc33;
-}
-.star-rating-back {
-  color: #ccc;
+    &-front {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        color: #ffcc33;
+    }
+
+    &-back {
+        color: colors.$dark_012;
+    }
 }

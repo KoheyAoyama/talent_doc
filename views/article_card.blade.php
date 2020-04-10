@@ -37,7 +37,6 @@
                     <div class="star-rating-front" style="{{ $rating_setting }}">★★★★★</div>
                     <div class="star-rating-back">★★★★★</div>
                 </div>
-                <div class="p-article-profile__rating">{{ $rating_latest }}</div>
             </div>
         </div>
     </a>
