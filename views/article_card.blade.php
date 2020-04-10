@@ -19,6 +19,7 @@
 
             // Get rating of current post
             $rating_latest = get_field('rating_latest');
+            $rating_setting = 'width: ' . ($rating_latest * 2) . '0%';
         @endphp
 
         <div class="p-article-content">
@@ -32,6 +33,10 @@
             </div>
             <div>
                 <p class="p-article-profile__name">{{ $talent_name }}</p>
+                <div class="star-rating">
+                    <div class="star-rating-front" style="{{ $rating_setting }}">★★★★★</div>
+                    <div class="star-rating-back">★★★★★</div>
+                </div>
                 <div class="p-article-profile__rating">{{ $rating_latest }}</div>
             </div>
         </div>
