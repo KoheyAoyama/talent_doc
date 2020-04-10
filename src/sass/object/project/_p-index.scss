@@ -1,0 +1,11 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-feed {
+
+    &__title {
+        margin: 48px 0 32px 0;
+        font-size: 34px;
+        color: colors.$dark_087;
+    }
+}

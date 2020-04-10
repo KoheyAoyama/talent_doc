@@ -121,6 +121,12 @@ body {
 /*----------------------------------------
 Colors
 ----------------------------------------*/
+.p-feed__title {
+  margin: 48px 0 32px 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .p-header {
   height: 80px;
   background-color: #44617b;
@@ -156,7 +162,7 @@ Colors
 }
 
 .p-article {
-  margin: 0 0 64px 0;
+  margin: 0 0 32px 0;
 }
 .p-article-content {
   margin: 0 0 8px 0;
