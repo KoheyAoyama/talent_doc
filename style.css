@@ -119,11 +119,16 @@ Colors
 ----------------------------------------*/
 .l-footer {
   height: 240px;
+  margin: 120px 0 0 0;
 }
 
 .l-main {
   max-width: 570px;
   margin: 0 auto;
+}
+
+.p-body__wrapper {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .p-feed__title {

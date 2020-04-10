@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    @include('header')
-    <main class="l-main">
-      @yield('content')
-    </main>
-    @include('footer')
+  @include('header')
+  <main class="l-main">
+    @yield('content')
+  </main>
+  @include('footer')
 </body>
 </html>

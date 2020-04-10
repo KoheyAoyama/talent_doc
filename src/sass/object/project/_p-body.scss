@@ -1,0 +1,6 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-body__wrapper {
+    background-color: colors.$alt_004;
+}
