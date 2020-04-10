@@ -162,13 +162,13 @@ Colors
 }
 
 .p-article {
-  margin: 0 0 32px 0;
+  margin: 0 0 48px 0;
 }
 .p-article-content {
   margin: 0 0 8px 0;
 }
 .p-article-content__title {
-  padding: 12px 0;
+  margin: 0 0 12px 0;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.87);
 }
