@@ -62,21 +62,16 @@
             @endif
         </div>
     </section>
-
     <section>
         <h2>{{ $talent_name }}の投稿一覧</h2>
 
         @if (have_posts())
             @while (have_posts())
                 {{ the_post() }}
-                <article>
-                    <h3>{{ the_title() }}</h3>
-                    <div>{{ the_excerpt() }}</div> 
-                </article>
+                @include('article_card')
             @endwhile
         @else
             <p>投稿はありません</p>
         @endif
     </section>
-
 @endsection

@@ -109,6 +109,10 @@ body {
   font-size: 1.6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .l-header {
   height: 80px;
   margin: 0 0 48px 0;
