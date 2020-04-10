@@ -102,11 +102,13 @@ input, select {
 }
 
 html {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6rem;
+  font-weight: 500;
 }
 
 img {
@@ -137,8 +139,10 @@ Colors
 
 .p-feed__title {
   margin: 0 0 32px 0;
-  font-size: 34px;
-  color: rgba(0, 0, 0, 0.87);
+  padding: 4px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.87);
 }
 
 .p-header {

@@ -7,6 +7,7 @@
     <title>{{ bloginfo('name') }}</title>
     <link rel="stylesheet" href="{{ get_template_directory_uri() }}/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
   @include('header')
