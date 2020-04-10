@@ -1,4 +1,4 @@
-<article>
+<article class="p-article">
     <a href="{{ the_permalink() }}">
         @php
             // Get talent info.
@@ -21,12 +21,19 @@
             $rating_latest = get_field('rating_latest');
         @endphp
 
-        <h3>{{ the_title() }}</h3>
-        <div>
-            <p><img src="{{ $profile_img }}" alt=""></p>
-            <p>{{ $talent_name }}</p>
+        <div class="p-article-content">
+            <h3 class="p-article-content__title">{{ the_title() }}</h3>        
+            <div class="p-article-content__body">{{ the_excerpt() }}</div>
         </div>
-        <div>{{ $rating_latest }}</div>
-        <div>{{ the_excerpt() }}</div>
+
+        <div class="p-article-profile">
+            <div>
+                <p><img class="p-article-profile__image" src="{{ $profile_img }}" alt=""></p>
+            </div>
+            <div>
+                <p class="p-article-profile__name">{{ $talent_name }}</p>
+                <div class="p-article-profile__rating">{{ $rating_latest }}</div>
+            </div>
+        </div>
     </a>
 </article>

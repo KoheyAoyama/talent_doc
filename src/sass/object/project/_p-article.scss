@@ -1,0 +1,46 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-article {
+    margin: 0 0 64px 0;
+
+    &-content {
+        margin: 0 0 8px 0;
+    
+        &__title {
+            padding: 12px 0;
+            font-size: 2.0rem;
+            color: colors.$dark_087;
+        }
+
+        &__body {
+            font-size: 1.6rem;
+            line-height: 1.7;
+            color: colors.$dark_087;
+        }
+    }
+
+    &-profile {
+        padding: 8px 8px;
+        display: flex;
+        justify-content: flex-start;
+        border: solid 1px colors.$dark_012;
+
+        &__image {
+            margin: 0 16px 0 0;
+            width: 80px;
+            height: 60px;
+        }
+
+        &__name {
+            margin: 8px 0;
+            font-size: 1.4rem;
+            color: colors.$dark_087;
+        }
+
+        &__rating {
+            font-size: 1.2rem;
+            color: colors.$dark_026;
+        }
+    }
+}
