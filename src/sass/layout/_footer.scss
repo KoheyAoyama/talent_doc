@@ -1,0 +1,6 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.l-footer {
+    height: variables.$footer_height;
+}

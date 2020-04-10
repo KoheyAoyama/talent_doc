@@ -111,6 +111,14 @@ body {
 
 .l-header {
   height: 80px;
+  margin: 0 0 48px 0;
+}
+
+/*----------------------------------------
+Colors
+----------------------------------------*/
+.l-footer {
+  height: 240px;
 }
 
 .l-main {
@@ -118,18 +126,15 @@ body {
   margin: 0 auto;
 }
 
-/*----------------------------------------
-Colors
-----------------------------------------*/
 .p-feed__title {
-  margin: 48px 0 32px 0;
+  margin: 0 0 32px 0;
   font-size: 34px;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .p-header {
   height: 80px;
-  background-color: #44617b;
+  background-color: #e2041b;
 }
 .p-header__wrapper {
   max-width: 1140px;
@@ -159,6 +164,24 @@ Colors
 }
 .p-header__nav-text:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.p-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.p-footer__rights {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.p-footer__rights-text {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .p-article {
