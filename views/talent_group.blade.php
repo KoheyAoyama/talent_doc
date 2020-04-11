@@ -68,7 +68,7 @@
         @if (have_posts())
             @while (have_posts())
                 {{ the_post() }}
-                @include('article_card')
+                @include('article')
             @endwhile
         @else
             <p>投稿はありません</p>
