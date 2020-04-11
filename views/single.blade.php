@@ -37,17 +37,7 @@
                 </article>
             @endwhile
         @endif
-
-        <section>
-            <a href="{{ get_category_link( $talent_id ) }}">
-                <div>
-                    <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-                    <h2>{{ $talent_name }}</h2>
-                    @if ( $office )
-                        <p>{{ $office }}</p>
-                    @endif
-                </div>
-            </a>
-        </section>
+        
+        @include('talent-profile--small')
     </div>
 @endsection

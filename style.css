@@ -223,6 +223,14 @@ img {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.54);
 }
+
+.read-more {
+  display: block;
+  margin: 8px 0 0 0;
+  font-size: 1.4rem;
+  color: #3f88c5;
+}
+
 .p-article-profile {
   width: 120px;
 }
@@ -250,13 +258,6 @@ img {
 }
 .star-rating-back {
   color: rgba(0, 0, 0, 0.12);
-}
-
-.read-more {
-  display: block;
-  margin: 8px 0 0 0;
-  font-size: 1.4rem;
-  color: #3f88c5;
 }
 
 /*!
