@@ -38,6 +38,6 @@
             @endwhile
         @endif
         
-        @include('talent-profile--small')
+        @include('profileSmall')
     </div>
 @endsection

@@ -7,7 +7,7 @@
             @if (have_posts())
                 @while (have_posts())
                     {{ the_post() }}
-                    @include('article')
+                    @include('articleItem')
                 @endwhile
             @endif
         </div>
