@@ -63,7 +63,7 @@
         </div>
     </section>
     <section>
-        <h2>{{ $talent_name }}の投稿一覧</h2
+        <h2>{{ $talent_name }}の投稿一覧</h2>
         @if (have_posts())
             @while (have_posts())
                 {{ the_post() }}
