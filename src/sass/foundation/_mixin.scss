@@ -1,0 +1,12 @@
+@use "./foundation/colors";
+
+@mixin sectionTitle {
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 0 0 32px 0;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1;
+    color: colors.$white_100;
+    background-color: colors.$dark_087;
+}

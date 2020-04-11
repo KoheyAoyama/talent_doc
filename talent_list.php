@@ -7,4 +7,4 @@
 * @since Twenty Fourteen 1.0
 */
 
-echo render_blade('talent_list');
+echo render_blade('talentList');

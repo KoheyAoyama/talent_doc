@@ -1,12 +1,12 @@
 @use "./foundation/colors";
-@use "./foundation/variables";
 
 .p-profileMedium {
     display: flex;
+    height: 120px;
+    overflow: hidden;
 
     &__image {
         width: 160px;
-        height: 120px;
         margin: 0 16px 0 0;
     }
 

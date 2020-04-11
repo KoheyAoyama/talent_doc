@@ -140,14 +140,12 @@ img {
 .p-feed__title {
   display: inline-block;
   padding: 4px 6px;
+  margin: 0 0 32px 0;
   font-size: 16px;
   font-weight: 900;
   line-height: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
-}
-.p-feed__list {
-  margin: 32px 0 0 0;
 }
 
 .p-header {
@@ -261,10 +259,11 @@ img {
 
 .p-profileMedium {
   display: flex;
+  height: 120px;
+  overflow: hidden;
 }
 .p-profileMedium__image {
   width: 160px;
-  height: 120px;
   margin: 0 16px 0 0;
 }
 .p-profileMedium__name {
@@ -306,6 +305,17 @@ img {
   font-size: 1.6rem;
   line-height: 2;
   color: rgba(0, 0, 0, 0.87);
+}
+
+.talentList__title {
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 0 0 32px 0;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.87);
 }
 
 /*!
