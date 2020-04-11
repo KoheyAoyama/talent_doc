@@ -4,10 +4,16 @@
 .p-feed {
 
     &__title {
-        margin: 0 0 32px 0;
-        padding: 4px;
+        display: inline-block;
+        padding: 4px 6px;
         font-size: 16px;
+        font-weight: 900;
+        line-height: 1;
         color: colors.$white_100;
         background-color: colors.$dark_087;
+    }
+
+    &__list {
+        margin: 32px 0 0 0;
     }
 }

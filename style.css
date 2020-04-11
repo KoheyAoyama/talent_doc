@@ -138,11 +138,16 @@ img {
 }
 
 .p-feed__title {
-  margin: 0 0 32px 0;
-  padding: 4px;
+  display: inline-block;
+  padding: 4px 6px;
   font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
+}
+.p-feed__list {
+  margin: 32px 0 0 0;
 }
 
 .p-header {
@@ -216,7 +221,7 @@ img {
 .p-article-content__body {
   font-size: 1.6rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.54);
 }
 .p-article-profile {
   width: 120px;
