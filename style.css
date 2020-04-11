@@ -321,6 +321,68 @@ img {
   margin: 0 0 16px 0;
 }
 
+.p-talentProfile {
+  margin: 0 0 48px 0;
+}
+.p-talentProfile__image {
+  margin: 0 0 16px 0;
+}
+.p-talentProfile__name {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+}
+.p-talentProfile__member {
+  display: flex;
+  margin: 0 0 16px;
+  list-style-type: none;
+}
+.p-talentProfile__rating {
+  display: flex;
+  margin: 0 0 16px 0;
+}
+
+.p-talentMember__item {
+  margin: 0 8px 0 0;
+}
+.p-talentMember__text {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.p-talentRating__title {
+  margin: 0 16px 0 0;
+  font-size: 1.4;
+  color: rgba(0, 0, 0, 0.54);
+}
+.p-talentRating__starRating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 1.6rem;
+}
+.p-talentRating__starRating--front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.p-talentRating__starRating--back {
+  color: rgba(0, 0, 0, 0.12);
+}
+
+.p-talentDetails {
+  line-height: 1.7;
+}
+.p-talentDetails__biography {
+  margin: 0 0 48px 0;
+}
+.p-talentDetails__dateOfDebut {
+  margin: 0 0 8px 0;
+}
+.p-talentDetails__office {
+  margin: 0 0 8px 0;
+}
 /*!
 Theme Name: Goodman
 Author: Kohey

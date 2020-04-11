@@ -20,6 +20,7 @@
     // Desicion for talent raging.
     if ( get_field('rating_latest') ) {
         $rating_latest = get_field('rating_latest');
+        $rating_setting = 'width: ' . ($rating_latest * 2) . '0%';
     } else {
         $rating_latest = '未評価';
     }
@@ -28,32 +29,38 @@
 @extends('layout')
 
 @section('content')
-    <section>
-        <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-        <h1>{{ $talent_name }}</h1>
+    <section class="p-talentProfile">
+        <img class="p-talentProfile__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
+        <h1 class="p-talentProfile__name">{{ $talent_name }}</h1>
         @php
             if ( $members ) {
-                echo '<ul>';
+                echo '<ul class="p-talentProfile__member p-talentMember">';
                 foreach ( $members as $termchildren ) {
                     $term = get_term_by( 'id', $termchildren, 'category' );
-                    echo '<li><a href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
+                    echo '<li class="p-talentMember__item"><a class="p-talentMember__text" href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
                 }
                 echo '</ul>';
             }
         @endphp
-        <div>{{ $rating_latest }}</div>
-        <div>
+        <div class="p-talentProfile__rating p-talentRating">
+            <p class="p-talentRating__title">最新の評価</p>
+            <div class="p-talentRating__starRating">
+                <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
+                <div class="p-talentRating__starRating--back">★★★★★</div>
+            </div>
+        </div>
+        <div class="p-talentProfile__details p-talentDetails">
             @if ( $biography )
-                <p>{{ $biography }}</p>
+                <p class="p-talentDetails__biography">{{ $biography }}</p>
             @endif
             @if ( $date_of_debut )
-                <p>{{ $date_of_debut }} 結成</p>
+                <p class="p-talentDetails__dateOfDebut">{{ $date_of_debut }} 結成</p>
             @endif
             @if ( $office )
-                <p>{{ $office }}</p>
+                <p class="p-talentDetails__office">{{ $office }} 所属</p>
             @endif
             @if ( $award_history )
-                <div>
+                <div class="p-talentDetails__awardHistory">
                     <p>受賞履歴</p>
                     @php // Must put PHP code here because it won't show correct HTML if it is via Blade engine.
                         echo nl2br($award_history);

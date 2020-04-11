@@ -1,0 +1,84 @@
+@use "./foundation/colors";
+
+.p-talentProfile {
+    margin: 0 0 48px 0;
+
+    &__image {
+        margin: 0 0 16px 0;
+    }
+
+    &__name {
+        margin: 0 0 8px 0;
+        font-size: 24px;
+    }
+
+    &__member {
+        display: flex;
+        margin: 0 0 16px;
+        list-style-type: none;
+    }
+
+    &__rating {
+        display: flex;
+        margin: 0 0 16px 0;
+    }
+}
+
+.p-talentMember {
+    
+    &__item {
+        margin: 0 8px 0 0;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: colors.$dark_054;
+    }
+}
+
+.p-talentRating{
+
+    &__title {
+        margin: 0 16px 0 0;
+        font-size: 1.4;
+        color: colors.$dark_054;
+    }
+
+    &__starRating {
+            position: relative;
+            width: 5em;
+            height: 1em;
+            font-size: 1.6rem;
+
+            &--front {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                color: #ffcc33;
+            }
+
+            &--back {
+                color: colors.$dark_012;
+            }
+    }
+}
+
+.p-talentDetails {
+    line-height: 1.7;
+    
+    &__biography {
+        margin: 0 0 48px 0;
+    }
+
+    &__dateOfDebut {
+        margin: 0 0 8px 0;
+    }
+
+    &__office {
+        margin: 0 0 8px 0;
+    }
+
+    &__awardHistory {
+    }
+}
