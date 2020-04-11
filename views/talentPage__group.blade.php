@@ -62,6 +62,7 @@
             @endif
         </div>
     </section>
+
     <section>
         @include('feed',['feedTitle'=>'投稿一覧'])
     </section>
