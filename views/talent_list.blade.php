@@ -66,14 +66,7 @@
         
         <article>
             <a href="{{ get_category_link( $talent_id ) }}">
-                <div>
-                    <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-                    <h2>{{ $talent_name }}</h2>
-                    <p>{{ $rating_latest }}</p>
-                    @if ( $office )
-                        <p>{{ $office }}</p>
-                    @endif
-                </div>
+                @include('profileMedium')
             </a>
         </article>
     @endforeach

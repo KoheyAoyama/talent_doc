@@ -2,10 +2,10 @@
 @use "./foundation/variables";
 
 .p-profileSmall {
-    width: 120px;
+        width: 120px;
 
     &__image {
-        margin: 0 16px 0 0;
+        height: 90px;
     }
 
     &__name {

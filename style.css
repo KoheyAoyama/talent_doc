@@ -137,7 +137,7 @@ img {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.p-Feed__title {
+.p-feed__title {
   display: inline-block;
   padding: 4px 6px;
   font-size: 16px;
@@ -146,7 +146,7 @@ img {
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
 }
-.p-Feed__list {
+.p-feed__list {
   margin: 32px 0 0 0;
 }
 
@@ -235,7 +235,7 @@ img {
   width: 120px;
 }
 .p-profileSmall__image {
-  margin: 0 16px 0 0;
+  height: 90px;
 }
 .p-profileSmall__name {
   margin: 4px 0;
@@ -264,6 +264,7 @@ img {
 }
 .p-profileMedium__image {
   width: 160px;
+  height: 120px;
   margin: 0 16px 0 0;
 }
 .p-profileMedium__name {

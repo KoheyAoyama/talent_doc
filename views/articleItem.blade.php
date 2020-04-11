@@ -1,11 +1,3 @@
-@php
-    $talent_array = get_the_category();
-        foreach ($talent_array as $talent) {
-            $talent_id = $talent->cat_ID;
-            $profile_img = get_category_img( $talent_id );
-    }
-@endphp
-
 <article class="p-article">
     <a class="p-article__innerContent" href="{{ the_permalink() }}">
         <div class="p-articleExcerpt">
