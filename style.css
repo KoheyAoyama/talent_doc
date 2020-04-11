@@ -317,6 +317,9 @@ img {
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
 }
+.talentList .talentProfile {
+  margin: 0 0 16px 0;
+}
 
 /*!
 Theme Name: Goodman

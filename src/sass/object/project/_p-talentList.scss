@@ -5,4 +5,8 @@
     &__title {
         @include mixin.sectionTitle;
     }
+
+    .talentProfile {
+        margin: 0 0 16px 0;
+    }
 }
