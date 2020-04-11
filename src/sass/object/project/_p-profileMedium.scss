@@ -1,0 +1,42 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-profileMedium {
+    display: flex;
+
+    &__image {
+        width: 160px;
+        margin: 0 16px 0 0;
+    }
+
+    &__name {
+        margin: 4px 0;
+        font-size: 1.6rem;
+        color: colors.$dark_087;
+    }
+
+    &__office {
+        margin: 0 0 8px 0;
+        font-size: 1.2rem;
+        color: colors.$dark_054;
+    }
+
+    &__starRating {
+        position: relative;
+        width: 5em;
+        height: 1em;
+        font-size: 14px;
+
+        &--front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            color: #ffcc33;
+        }
+
+        &--back {
+            color: colors.$dark_012;
+        }
+    }
+}

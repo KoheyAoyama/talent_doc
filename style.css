@@ -259,6 +259,40 @@ img {
   color: rgba(0, 0, 0, 0.12);
 }
 
+.p-profileMedium {
+  display: flex;
+}
+.p-profileMedium__image {
+  width: 160px;
+  margin: 0 16px 0 0;
+}
+.p-profileMedium__name {
+  margin: 4px 0;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.p-profileMedium__office {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.p-profileMedium__starRating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 14px;
+}
+.p-profileMedium__starRating--front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.p-profileMedium__starRating--back {
+  color: rgba(0, 0, 0, 0.12);
+}
+
 .p-single {
   margin: 0 0 48px 0;
 }
