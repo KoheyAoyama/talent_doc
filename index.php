@@ -1,3 +1,3 @@
 <?php
 
-echo render_blade('index');
+echo render_blade('homeFeed');

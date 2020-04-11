@@ -137,7 +137,7 @@ img {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.p-feed__title {
+.p-homeFeed__title {
   display: inline-block;
   padding: 4px 6px;
   font-size: 16px;
@@ -146,7 +146,7 @@ img {
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
 }
-.p-feed__list {
+.p-homeFeed__list {
   margin: 32px 0 0 0;
 }
 
