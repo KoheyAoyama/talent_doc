@@ -8,27 +8,27 @@
     margin: 0 0 40px 0;
     padding: 0 0 32px 0;
     border-bottom: solid 1px colors.$dark_012;
-
-    &-content {
-        margin: 0 16px 0 0;
-    
-        &__title {
-            margin: 0 0 8px 0;
-            font-size: 2.0rem;
-            color: colors.$dark_087;
-        }
-
-        &__body {
-            font-size: 1.6rem;
-            line-height: 1.5;
-            color: colors.$dark_054;
-        }
-    }
 }
 
-.read-more {
-    display: block;
-    margin: 8px 0 0 0;
-    font-size: 1.4rem;
-    color: colors.$theme_accent;
+.p-articleExcerpt {
+    margin: 0 16px 0 0;
+
+    &__title {
+        margin: 0 0 8px 0;
+        font-size: 2.0rem;
+        color: colors.$dark_087;
+    }
+
+    &__body {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: colors.$dark_054;
+    }
+
+    .read-more {
+        display: block;
+        margin: 8px 0 0 0;
+        font-size: 1.4rem;
+        color: colors.$theme_accent;
+    }
 }

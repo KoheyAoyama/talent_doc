@@ -13,9 +13,9 @@ Foundation
 /*----------------------------------------
 Layout
 ----------------------------------------*/
-@use "layout/header";
-@use "layout/footer";
-@use "layout/main";
+@use "layout/l-header";
+@use "layout/l-footer";
+@use "layout/l-main";
 
 /*----------------------------------------
 Component
@@ -29,4 +29,4 @@ Project
 @use "object/project/p-header";
 @use "object/project/p-footer";
 @use "object/project/p-article";
-@use "object/project/p-article-profile";
+@use "object/project/p-profileSmall";
