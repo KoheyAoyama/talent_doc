@@ -63,14 +63,6 @@
         </div>
     </section>
     <section>
-        <h2>{{ $talent_name }}の投稿一覧</h2>
-        @if (have_posts())
-            @while (have_posts())
-                {{ the_post() }}
-                @include('articleItem')
-            @endwhile
-        @else
-            <p>投稿はありません</p>
-        @endif
+        @include('feed',['feedTitle'=>'投稿一覧'])
     </section>
 @endsection
