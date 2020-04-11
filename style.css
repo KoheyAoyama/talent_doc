@@ -259,6 +259,20 @@ img {
   color: rgba(0, 0, 0, 0.12);
 }
 
+.p-single {
+  margin: 0 0 48px 0;
+}
+.p-single__title {
+  margin: 0 0 24px 0;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.p-single__body {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 /*!
 Theme Name: Goodman
 Author: Kohey

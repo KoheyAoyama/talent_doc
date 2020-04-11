@@ -1,0 +1,18 @@
+@use "./foundation/colors";
+@use "./foundation/variables";
+
+.p-single {
+    margin: 0 0 48px 0;
+
+    &__title {
+        margin: 0 0 24px 0;
+        font-size: 3.0rem;
+        color: colors.$dark_087;
+    }
+
+    &__body {
+        font-size: 1.6rem;
+        line-height: 2.0;
+        color: colors.$dark_087;
+    }
+}

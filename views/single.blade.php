@@ -24,18 +24,14 @@
     @if (have_posts())
         @while (have_posts())
             {{ the_post() }}
-            <article>
-                <h3>{{ the_title() }}</h3>
-                <div>
-                    <p>{{ $talent_name }}</p>
-                    <p>{{ $rating_latest }}</p>
-                </div>
-                <div class="content">
+            <article class="p-single">
+                <h3 class="p-single__title">{{ the_title() }}</h3>
+                <div class="p-single__body">
                     {{ the_content() }}
                 </div>
             </article>
         @endwhile
     @endif
-    
+
     @include('profileSmall')
 @endsection
