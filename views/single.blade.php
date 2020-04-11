@@ -21,23 +21,21 @@
 @extends('layout')
 
 @section('content')
-    <div class="container">
-        @if (have_posts())
-            @while (have_posts())
-                {{ the_post() }}
-                <article>
-                    <h3>{{ the_title() }}</h3>
-                    <div>
-                        <p>{{ $talent_name }}</p>
-                        <p>{{ $rating_latest }}</p>
-                    </div>
-                    <div class="content">
-                        {{ the_content() }}
-                    </div>
-                </article>
-            @endwhile
-        @endif
-        
-        @include('profileSmall')
-    </div>
+    @if (have_posts())
+        @while (have_posts())
+            {{ the_post() }}
+            <article>
+                <h3>{{ the_title() }}</h3>
+                <div>
+                    <p>{{ $talent_name }}</p>
+                    <p>{{ $rating_latest }}</p>
+                </div>
+                <div class="content">
+                    {{ the_content() }}
+                </div>
+            </article>
+        @endwhile
+    @endif
+    
+    @include('profileSmall')
 @endsection

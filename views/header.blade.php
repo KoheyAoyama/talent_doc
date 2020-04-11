@@ -1,15 +1,19 @@
-<?php
+@php
   $page = get_page_by_path( 'talent-list' );
   $permalink = get_permalink( $page->ID );
   $page_name = get_the_title( $page->ID );
-?>
+@endphp
 
 <header class="l-header">
   <div class="p-header">
     <div class="p-header__wrapper">
       <div class="p-header__title">
         <a class="p-header__title-text" href="{{ home_url() }}">
-          <h1>TalentDoc</h1>
+          @if ( is_single() )
+            <p>TalentDoc</p>
+          @else
+            <h1>TalentDoc</h1>
+          @endif
         </a>
       </div>
       <div class="p-header__menu">
