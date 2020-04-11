@@ -66,7 +66,7 @@
         
         <article>
             <a href="{{ get_category_link( $talent_id ) }}">
-                @include('profileMedium')
+                @include('module.profileMedium')
             </a>
         </article>
     @endforeach

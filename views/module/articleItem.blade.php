@@ -6,6 +6,6 @@
         </div>
     </a>
     <a class="p-article__innerProfile" href="{{ get_category_link( $talent_id ) }}">
-        @include('profileSmall')
+        @include('module.profileSmall')
     </a>
 </article>

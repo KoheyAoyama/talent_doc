@@ -37,6 +37,6 @@
     @endif
 
     <a class="p-article__innerProfile" href="{{ get_category_link( $talent_id ) }}">
-        @include('profileMedium')
+        @include('module.profileMedium')
     </a>
 @endsection
