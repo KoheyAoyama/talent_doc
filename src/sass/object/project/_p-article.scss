@@ -2,10 +2,15 @@
 @use "./foundation/variables";
 
 .p-article {
-    margin: 0 0 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+    padding: 0 0 32px 0;
+    border-bottom: solid 1px colors.$dark_012;
 
     &-content {
-        margin: 0 0 8px 0;
+        margin: 0 16px 0 0;
     
         &__title {
             margin: 0 0 12px 0;
@@ -15,26 +20,21 @@
 
         &__body {
             font-size: 1.6rem;
-            line-height: 1.7;
+            line-height: 1.5;
             color: colors.$dark_087;
         }
     }
 
     &-profile {
-        padding: 8px 8px;
-        display: flex;
-        justify-content: flex-start;
-        border: solid 1px colors.$dark_012;
+        width: 120px;
 
         &__image {
             margin: 0 16px 0 0;
-            width: 80px;
-            height: 60px;
         }
 
         &__name {
-            margin: 8px 0;
-            font-size: 1.4rem;
+            margin: 4px 0;
+            font-size: 1.2rem;
             color: colors.$dark_087;
         }
     }
@@ -44,7 +44,7 @@
     position: relative;
     width: 5em;
     height: 1em;
-    font-size: 14px;
+    font-size: 12px;
 
     &-front {
         position: absolute;
@@ -57,4 +57,11 @@
     &-back {
         color: colors.$dark_012;
     }
+}
+
+.read-more {
+    display: block;
+    margin: 8px 0 0 0;
+    font-size: 1.4rem;
+    color: colors.$theme_accent;
 }

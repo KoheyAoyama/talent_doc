@@ -17,12 +17,12 @@ if (!function_exists('render_blade')) {
 }
 
 function new_excerpt_more($more) {
-	return '<br/>もっとみる';
+	return '</br><span class="read-more">続きを読む</span>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
 function custom_excerpt_length( $length ) {
-    return 140;	
+    return 80;	
 }	
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
