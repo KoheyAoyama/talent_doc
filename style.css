@@ -315,6 +315,7 @@ img {
   line-height: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
+  margin: 0 0 32px 0;
 }
 .talentList .talentProfile {
   margin: 0 0 16px 0;
