@@ -8,19 +8,18 @@
     }
 
     &__name {
-        margin: 0 0 8px 0;
         font-size: 24px;
     }
 
     &__member {
         display: flex;
-        margin: 0 0 16px;
+        margin: 8px 0 0 0;
         list-style-type: none;
     }
 
     &__rating {
         display: flex;
-        margin: 0 0 16px 0;
+        margin: 16px 0;
     }
 }
 
