@@ -27,6 +27,8 @@
                 @endphp
                 @include('module.articleItem')
             @endwhile
+        @else
+            <p>投稿はありません</p>
         @endif
     </div>
 </div>
