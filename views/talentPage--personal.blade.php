@@ -30,34 +30,27 @@
 @extends('layout')
 
 @section('content')
-    <section>
-        <img src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-        <h1>{{ $talent_name }}</h1>
-        <a href="{{ $group_link }}.">{{ $group_name }}</a>
-        <div>{{ $rating_latest }}</div>
-        <div>
+    <section class="p-talentProfile">
+        <img class="p-talentProfile__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
+        <h1 class="p-talentProfile__name">{{ $talent_name }}</h1>
+        <div class="p-talentProfile__rating p-talentRating">
+            <p class="p-talentRating__title">最新の評価</p>
+            <div class="p-talentRating__starRating">
+                <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
+                <div class="p-talentRating__starRating--back">★★★★★</div>
+            </div>
+        </div>
+        <div class="p-talentProfile__details p-talentDetails">
             @if ( $biography )
-                <p>{{ $biography }}</p>
+                <p class="p-talentDetails__biography">{{ $biography }}</p>
             @endif
             @if ( $office )
-                <p>{{ $office }}</p>
+                <p class="p-talentDetails__office">{{ $office }} 所属</p>
             @endif
         </div>
     </section>
 
     <section>
-        <h2>{{ $talent_name }}の投稿一覧</h2>
-
-        @if (have_posts())
-            @while (have_posts())
-                {{ the_post() }}
-                <article>
-                    <h3>{{ the_title() }}</h3>
-                    <div>{{ the_excerpt() }}</div> 
-                </article>
-            @endwhile
-        @else
-            <p>投稿はありません</p>
-        @endif
+        @include('feed',['feedTitle'=>'投稿一覧'])
     </section>
 @endsection
