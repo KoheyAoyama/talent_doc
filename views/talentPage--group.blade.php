@@ -30,29 +30,32 @@
 
 @section('content')
     <section class="p-talentProfile">
-        <img class="p-talentProfile__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
-        <h1 class="p-talentProfile__name">{{ $talent_name }}</h1>
-        @php
-            if ( $members ) {
-                echo '<ul class="p-talentProfile__member p-talentMember">';
-                foreach ( $members as $termchildren ) {
-                    $term = get_term_by( 'id', $termchildren, 'category' );
-                    echo '<li class="p-talentMember__item"><a class="p-talentMember__text" href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
+        <div class="p-talentProfile__basic p-talentBasics">
+            <img class="p-talentBasics__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
+            <h1 class="p-talentBasics__name">{{ $talent_name }}</h1>
+            @php
+                if ( $members ) {
+                    echo '<ul class="p-talentBasics__member p-talentMember">';
+                    foreach ( $members as $termchildren ) {
+                        $term = get_term_by( 'id', $termchildren, 'category' );
+                        echo '<li class="p-talentMember__item"><a class="p-talentMember__text" href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
+                    }
+                    echo '</ul>';
                 }
-                echo '</ul>';
-            }
-        @endphp
-        <div class="p-talentProfile__rating p-talentRating">
-            <p class="p-talentRating__title">最新の評価</p>
-            <div class="p-talentRating__starRating">
-                <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
-                <div class="p-talentRating__starRating--back">★★★★★</div>
+            @endphp
+            <div class="p-talentBasics__rating p-talentRating">
+                <p class="p-talentRating__title">最新の評価</p>
+                <div class="p-talentRating__starRating">
+                    <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
+                    <div class="p-talentRating__starRating--back">★★★★★</div>
+                </div>
             </div>
+            @if ( $biography )
+                <p class="p-talentBasics__biography">{{ $biography }}</p>
+            @endif
         </div>
         <div class="p-talentProfile__details p-talentDetails">
-            @if ( $biography )
-                <p class="p-talentDetails__biography">{{ $biography }}</p>
-            @endif
+            <p class="p-talentDetails__title">詳細情報</p>
             @if ( $date_of_debut )
                 <p class="p-talentDetails__dateOfDebut">{{ $date_of_debut }} 結成</p>
             @endif

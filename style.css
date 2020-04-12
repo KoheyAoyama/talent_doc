@@ -140,12 +140,12 @@ img {
 .p-feed__title {
   display: inline-block;
   padding: 4px 6px;
-  margin: 0 0 32px 0;
   font-size: 16px;
   font-weight: 900;
   line-height: 1;
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
+  margin: 0 0 32px 0;
 }
 
 .p-header {
@@ -310,7 +310,6 @@ img {
 .talentList__title {
   display: inline-block;
   padding: 4px 6px;
-  margin: 0 0 32px 0;
   font-size: 16px;
   font-weight: 900;
   line-height: 1;
@@ -324,22 +323,25 @@ img {
 .p-talentProfile {
   margin: 0 0 48px 0;
 }
-.p-talentProfile__image {
+.p-talentProfile__basic {
+  margin: 0 0 48px 0;
+}
+
+.p-talentBasics__image {
   margin: 0 0 16px 0;
 }
-.p-talentProfile__name {
+.p-talentBasics__name {
   font-size: 24px;
 }
-.p-talentProfile__member {
+.p-talentBasics__member {
   display: flex;
   margin: 8px 0 0 0;
   list-style-type: none;
 }
-.p-talentProfile__rating {
+.p-talentBasics__rating {
   display: flex;
   margin: 16px 0;
 }
-
 .p-talentMember__item {
   margin: 0 8px 0 0;
 }
@@ -373,8 +375,15 @@ img {
 .p-talentDetails {
   line-height: 1.7;
 }
-.p-talentDetails__biography {
-  margin: 0 0 48px 0;
+.p-talentDetails__title {
+  display: inline-block;
+  padding: 4px 6px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.87);
+  margin: 0 0 16px 0;
 }
 .p-talentDetails__dateOfDebut {
   margin: 0 0 8px 0;

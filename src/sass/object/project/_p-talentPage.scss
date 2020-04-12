@@ -1,8 +1,15 @@
 @use "./foundation/colors";
+@use "./foundation/mixin";
 
 .p-talentProfile {
     margin: 0 0 48px 0;
 
+    &__basic {
+        margin: 0 0 48px 0;
+    }
+}
+
+.p-talentBasics {
     &__image {
         margin: 0 0 16px 0;
     }
@@ -21,10 +28,12 @@
         display: flex;
         margin: 16px 0;
     }
+
+    &__biography {
+    }
 }
 
 .p-talentMember {
-    
     &__item {
         margin: 0 8px 0 0;
     }
@@ -35,39 +44,37 @@
     }
 }
 
-.p-talentRating{
+.p-talentRating {
 
     &__title {
         margin: 0 16px 0 0;
         font-size: 1.4;
         color: colors.$dark_054;
     }
-
     &__starRating {
-            position: relative;
-            width: 5em;
-            height: 1em;
-            font-size: 1.6rem;
-
-            &--front {
-                position: absolute;
-                top: 0;
-                left: 0;
-                overflow: hidden;
-                color: #ffcc33;
-            }
-
-            &--back {
-                color: colors.$dark_012;
-            }
+        position: relative;
+        width: 5em;
+        height: 1em;
+        font-size: 1.6rem;
+        &--front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            color: #ffcc33;
+        }
+        &--back {
+            color: colors.$dark_012;
+        }
     }
 }
 
 .p-talentDetails {
     line-height: 1.7;
-    
-    &__biography {
-        margin: 0 0 48px 0;
+
+    &__title {
+        @include mixin.sectionTitle;
+        margin: 0 0 16px 0;
     }
 
     &__dateOfDebut {
