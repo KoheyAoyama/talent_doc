@@ -272,12 +272,12 @@ img {
 }
 .p-profileMedium__name {
   margin: 4px 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.87);
 }
 .p-profileMedium__office {
   margin: 0 0 8px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.54);
 }
 .p-profileMedium__starRating {
