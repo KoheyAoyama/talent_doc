@@ -183,6 +183,7 @@ img {
 .p-global-menu__nav__text {
   display: block;
   padding: 0 16px;
+  font-size: 1.6rem;
   line-height: 80px;
   color: white;
   text-decoration: none;
