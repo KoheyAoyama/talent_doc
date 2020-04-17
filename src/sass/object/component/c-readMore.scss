@@ -1,0 +1,8 @@
+@use "./foundation/colors";
+
+.read-more {
+    display: block;
+    margin: 8px 0 0 0;
+    font-size: 1.4rem;
+    color: colors.$theme_accent;
+}
