@@ -1,4 +1,5 @@
 @use "./foundation/colors";
+@use "./foundation/variables";
 
 .p-article {
     display: flex;
@@ -18,8 +19,8 @@
         }
 
         &__body {
-            font-size: 1.6rem;
-            line-height: 1.5;
+            font-size: 1.4rem;
+            line-height: 1.7;
             color: colors.$dark_054;
         }
     }
