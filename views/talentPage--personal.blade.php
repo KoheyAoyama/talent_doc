@@ -34,18 +34,18 @@
         <div class="p-talentBasics">
             <img class="p-talentBasics__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
             <h1 class="p-talentBasics__name">{{ $talent_name }}</h1>
-            <div class="p-talentBasics__rating p-talentRating">
-                <p class="p-talentRating__title">最新の評価</p>
-                <div class="p-talentRating__starRating">
-                    <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
-                    <div class="p-talentRating__starRating--back">★★★★★</div>
+            <div class="p-talentBasics__rating">
+                <p class="p-talentBasics__rating__title">最新の評価</p>
+                <div class="p-talentBasics__rating__starRating">
+                    <div class="p-talentBasics__rating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
+                    <div class="p-talentBasics__rating__starRating--back">★★★★★</div>
                 </div>
             </div>
             @if ( $biography )
                 <p class="p-talentBasics__biography">{{ $biography }}</p>
             @endif
         </div>
-        <div class="p-talentProfile__details p-talentDetails">
+        <div class="p-talentDetails">
             <p class="p-talentDetails__title">詳細情報</p>
             @if ( $office )
                 <p class="p-talentDetails__office">{{ $office }} 所属</p>
