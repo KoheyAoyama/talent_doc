@@ -21,7 +21,7 @@
 @section('content')
     <div class="talentList">
         <h1 class="talentList__title">{{ the_title() }}</h1>
-        <section class="talentList__content">
+        <section>
             @foreach ($talent_list as $talent)
                 @php
                     $talent_id = $talent->cat_ID;
@@ -65,7 +65,7 @@
                     }
                 @endphp
                 
-                <div class="talentProfile">
+                <div class="talentList__item">
                     <a href="{{ get_category_link( $talent_id ) }}">
                         @include('module.profileMedium')
                     </a>
