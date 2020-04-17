@@ -188,13 +188,14 @@ img {
   height: 240px;
   background-color: rgba(0, 0, 0, 0.04);
 }
-.p-footer__rights {
+
+.p-footer-rights {
   display: flex;
   align-items: center;
   height: 24px;
   background-color: rgba(0, 0, 0, 0.87);
 }
-.p-footer__rights-text {
+.p-footer-rights__text {
   margin: 0 auto;
   font-size: 1.2rem;
   color: white;

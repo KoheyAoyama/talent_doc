@@ -6,17 +6,17 @@
     flex-direction: column-reverse;
     height: variables.$footer_height;
     background-color: colors.$alt_004;
+}
 
-    &__rights {
-        display: flex;
-        align-items: center;
-        height: 24px;
-        background-color: colors.$dark_087;
+.p-footer-rights {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    background-color: colors.$dark_087;
 
-        &-text {
-            margin: 0 auto;
-            font-size: 1.2rem;
-            color: colors.$white_100;
-        }
+    &__text {
+        margin: 0 auto;
+        font-size: 1.2rem;
+        color: colors.$white_100;
     }
 }
