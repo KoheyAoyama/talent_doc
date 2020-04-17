@@ -30,15 +30,15 @@
 
 @section('content')
     <section class="p-talentProfile">
-        <div class="p-talentProfile__basic p-talentBasics">
+        <div class="p-talentBasics">
             <img class="p-talentBasics__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
             <h1 class="p-talentBasics__name">{{ $talent_name }}</h1>
             @php
                 if ( $members ) {
-                    echo '<ul class="p-talentBasics__member p-talentMember">';
+                    echo '<ul class="p-talentBasics__member">';
                     foreach ( $members as $termchildren ) {
                         $term = get_term_by( 'id', $termchildren, 'category' );
-                        echo '<li class="p-talentMember__item"><a class="p-talentMember__text" href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
+                        echo '<li class="p-talentBasics__member__item"><a class="p-talentBasics__member__text" href="' . get_term_link( $termchildren, 'category' ) . '">' . $term->name . '</a></li>';
                     }
                     echo '</ul>';
                 }
@@ -54,7 +54,7 @@
                 <p class="p-talentBasics__biography">{{ $biography }}</p>
             @endif
         </div>
-        <div class="p-talentProfile__details p-talentDetails">
+        <div class="p-talentDetails">
             <p class="p-talentDetails__title">詳細情報</p>
             @if ( $date_of_debut )
                 <p class="p-talentDetails__dateOfDebut">{{ $date_of_debut }} 結成</p>
