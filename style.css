@@ -301,14 +301,17 @@ img {
   margin: 0 0 48px 0;
 }
 .p-single__title {
-  margin: 0 0 24px 0;
+  margin: 0 0 36px 0;
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.87);
 }
 .p-single__body {
-  font-size: 1.6rem;
-  line-height: 2;
+  font-size: 1.8rem;
+  line-height: 1.7;
   color: rgba(0, 0, 0, 0.87);
+}
+.p-single p {
+  margin: 0 0 36px 0;
 }
 
 .talentList__title {
