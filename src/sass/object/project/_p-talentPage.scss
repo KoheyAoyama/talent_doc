@@ -13,7 +13,7 @@
     }
 
     &__name {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
     &__member {
@@ -26,17 +26,17 @@
         }
 
         &__text {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             color: colors.$theme_accent;
         }
     }
     &__rating {
         display: flex;
-        margin: 16px 0;
+        margin: 24px 0;
 
         &__title {
             margin: 0 16px 0 0;
-            font-size: 1.4;
+            font-size: 1.6rem;
             color: colors.$dark_054;
         }
         &__starRating {
@@ -56,6 +56,10 @@
             }
         }
     }
+
+    &__biography {
+        line-height: 1.7;
+    }
 }
 
 .p-talentDetails {
@@ -67,13 +71,16 @@
     }
 
     &__dateOfDebut {
-        margin: 0 0 8px 0;
+        font-size: 1.6rem;
+        margin: 0 0 16px 0;
     }
 
     &__office {
-        margin: 0 0 8px 0;
+        font-size: 1.6rem;
+        margin: 0 0 16px 0;
     }
 
     &__awardHistory {
+        font-size: 1.6rem;
     }
 }

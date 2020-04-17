@@ -339,7 +339,7 @@ img {
   margin: 0 0 16px 0;
 }
 .p-talentBasics__name {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .p-talentBasics__member {
   display: flex;
@@ -350,16 +350,16 @@ img {
   margin: 0 8px 0 0;
 }
 .p-talentBasics__member__text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #3f88c5;
 }
 .p-talentBasics__rating {
   display: flex;
-  margin: 16px 0;
+  margin: 24px 0;
 }
 .p-talentBasics__rating__title {
   margin: 0 16px 0 0;
-  font-size: 1.4;
+  font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.54);
 }
 .p-talentBasics__rating__starRating {
@@ -378,6 +378,9 @@ img {
 .p-talentBasics__rating__starRating--back {
   color: rgba(0, 0, 0, 0.12);
 }
+.p-talentBasics__biography {
+  line-height: 1.7;
+}
 
 .p-talentDetails {
   line-height: 1.7;
@@ -393,11 +396,17 @@ img {
   margin: 0 0 16px 0;
 }
 .p-talentDetails__dateOfDebut {
-  margin: 0 0 8px 0;
+  font-size: 1.6rem;
+  margin: 0 0 16px 0;
 }
 .p-talentDetails__office {
-  margin: 0 0 8px 0;
+  font-size: 1.6rem;
+  margin: 0 0 16px 0;
 }
+.p-talentDetails__awardHistory {
+  font-size: 1.6rem;
+}
+
 /*!
 Theme Name: Goodman
 Author: Kohey
