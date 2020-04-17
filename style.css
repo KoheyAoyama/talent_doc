@@ -191,13 +191,13 @@ img {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.p-footer-rights {
+.p-copyrights {
   display: flex;
   align-items: center;
   height: 24px;
   background-color: rgba(0, 0, 0, 0.87);
 }
-.p-footer-rights__text {
+.p-copyrights__text {
   margin: 0 auto;
   font-size: 1.2rem;
   color: white;
