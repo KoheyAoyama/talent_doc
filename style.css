@@ -353,25 +353,25 @@ img {
   display: flex;
   margin: 16px 0;
 }
-.p-talentRating__title {
+.p-talentBasics__rating__title {
   margin: 0 16px 0 0;
   font-size: 1.4;
   color: rgba(0, 0, 0, 0.54);
 }
-.p-talentRating__starRating {
+.p-talentBasics__rating__starRating {
   position: relative;
   width: 5em;
   height: 1em;
   font-size: 1.6rem;
 }
-.p-talentRating__starRating--front {
+.p-talentBasics__rating__starRating--front {
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
   color: #ffcc33;
 }
-.p-talentRating__starRating--back {
+.p-talentBasics__rating__starRating--back {
   color: rgba(0, 0, 0, 0.12);
 }
 

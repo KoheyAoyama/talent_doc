@@ -43,11 +43,11 @@
                     echo '</ul>';
                 }
             @endphp
-            <div class="p-talentBasics__rating p-talentRating">
-                <p class="p-talentRating__title">最新の評価</p>
-                <div class="p-talentRating__starRating">
-                    <div class="p-talentRating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
-                    <div class="p-talentRating__starRating--back">★★★★★</div>
+            <div class="p-talentBasics__rating">
+                <p class="p-talentBasics__rating__title">最新の評価</p>
+                <div class="p-talentBasics__rating__starRating">
+                    <div class="p-talentBasics__rating__starRating--front" style="{{ $rating_setting }}">★★★★★</div>
+                    <div class="p-talentBasics__rating__starRating--back">★★★★★</div>
                 </div>
             </div>
             @if ( $biography )

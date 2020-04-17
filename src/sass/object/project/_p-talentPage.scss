@@ -30,39 +30,30 @@
             color: colors.$theme_accent;
         }
     }
-
     &__rating {
         display: flex;
         margin: 16px 0;
-    }
 
-    &__biography {
-    }
-}
-
-
-
-.p-talentRating {
-
-    &__title {
-        margin: 0 16px 0 0;
-        font-size: 1.4;
-        color: colors.$dark_054;
-    }
-    &__starRating {
-        position: relative;
-        width: 5em;
-        height: 1em;
-        font-size: 1.6rem;
-        &--front {
-            position: absolute;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            color: #ffcc33;
+        &__title {
+            margin: 0 16px 0 0;
+            font-size: 1.4;
+            color: colors.$dark_054;
         }
-        &--back {
-            color: colors.$dark_012;
+        &__starRating {
+            position: relative;
+            width: 5em;
+            height: 1em;
+            font-size: 1.6rem;
+            &--front {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                color: #ffcc33;
+            }
+            &--back {
+                color: colors.$dark_012;
+            }
         }
     }
 }

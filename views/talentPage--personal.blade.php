@@ -31,7 +31,7 @@
 
 @section('content')
     <section class="p-talentProfile">
-        <div class="p-talentProfile__basic p-talentBasics">
+        <div class="p-talentBasics">
             <img class="p-talentBasics__image" src="{{ $profile_img }}" alt="{{ $talent_name . "のプロフィール写真" }}">
             <h1 class="p-talentBasics__name">{{ $talent_name }}</h1>
             <div class="p-talentBasics__rating p-talentRating">
