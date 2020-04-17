@@ -7,8 +7,8 @@
 <header class="l-header">
   <div class="p-header">
     <div class="p-header__wrapper">
-      <div class="p-header__title">
-        <a class="p-header__title-text" href="{{ home_url() }}">
+      <div class="p-page-logo">
+        <a class="p-page-logo__text" href="{{ home_url() }}">
           @if ( is_single() )
             <p>TalentDoc</p>
           @else
@@ -16,20 +16,16 @@
           @endif
         </a>
       </div>
-      <div class="p-header__menu">
-        <nav class="p-header__nav">
-          <ul class="p-header__nav-list">
-            <li class="p-header__nav-item">
-              <a class="p-header__nav-text" href="{{ home_url() }}">最新記事一覧</a>
+        <nav class="p-global-menu">
+          <ul class="p-global-menu__nav">
+            <li class="p-global-menu__nav__item">
+              <a class="p-global-menu__nav__text" href="{{ home_url() }}">最新記事一覧</a>
             </li>
-            <li class="p-header__nav-item">
-              <a class="p-header__nav-text" href="{{ $permalink }}">芸人一覧</a>
+            <li class="p-global-menu__nav__item">
+              <a class="p-global-menu__nav__text" href="{{ $permalink }}">芸人一覧</a>
             </li>
           </ul>
         </nav>
-      </div>
     </div>
   </div>
-  
-  
 </header>

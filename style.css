@@ -159,7 +159,8 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.p-header__title-text {
+
+.p-page-logo__text {
   display: block;
   margin: 0 0 0 16px;
   font-family: "Bowlby One SC", cursive;
@@ -167,18 +168,19 @@ img {
   color: white;
   text-decoration: none;
 }
-.p-header__nav-list {
+
+.p-global-menu__nav {
   display: flex;
   justify-content: flex-end;
 }
-.p-header__nav-text {
+.p-global-menu__nav__text {
   display: block;
   padding: 0 16px;
   line-height: 80px;
   color: white;
   text-decoration: none;
 }
-.p-header__nav-text:hover {
+.p-global-menu__nav__text:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
