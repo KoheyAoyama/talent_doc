@@ -45,6 +45,8 @@
         @endwhile
     @endif
 
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ the_title() }}&hashtags=お笑い芸人,芸人&url={{ the_permalink() }}">Tweet</a>
+
     <a href="{{ get_category_link( $talent_id ) }}">
         @include('module.profileMedium')
     </a>
