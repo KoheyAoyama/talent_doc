@@ -10,6 +10,8 @@
     border-bottom: solid 1px colors.$dark_012;
 
     &__excerpt {
+        position: relative;
+        width: variables.$content_width_half - 120px - 16px;
         margin: 0 16px 0 0;
 
         &__title {
@@ -23,5 +25,13 @@
             line-height: 1.7;
             color: colors.$dark_054;
         }
+    }
+
+    &__pageView {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.2rem;
+        color: colors.$dark_026;
     }
 }

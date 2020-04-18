@@ -34,7 +34,7 @@ function get_category_img( $category_id ) {
 function set_page_views($postID) {
     $count = get_field("page_view", $postID);
 
-    if($count==''){
+    if($count=="NULL"){
         $count = 1;
         update_field("page_view", $count, $postID);
     }else{
