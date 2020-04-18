@@ -21,6 +21,12 @@
     // Get rating of current post
     $rating_latest = get_field('rating_latest');
     $rating_setting = 'width: ' . ($rating_latest * 2) . '0%';
+
+    // Get page view
+    $page_view = get_field("page_view");
+                    if ( $page_view==NULL ) {
+                        $page_view = "1";
+                    }
 @endphp
 
 @extends('layout')
@@ -34,6 +40,7 @@
                 <div class="p-single__body">
                     {{ the_content() }}
                 </div>
+                <div class="p-single__pageView">{{ $page_view }}ビュー</div>
             </article>
         @endwhile
     @endif

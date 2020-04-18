@@ -25,6 +25,7 @@
                     $rating_latest = get_field('rating_latest');
                     $rating_setting = 'width: ' . ($rating_latest * 2) . '0%';
 
+                    // Get page view
                     $page_view = get_field("page_view");
                     if ( $page_view==NULL ) {
                         $page_view = "1";
