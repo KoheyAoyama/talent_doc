@@ -1,4 +1,6 @@
 @php
+    //if( !is_user_logged_in() && !is_bot() ) { set_page_views( get_the_ID() ); }
+    set_page_views( get_the_ID() );
     // Get talent info.
     $talent_array = get_the_category();
     foreach ($talent_array as $talent) {
