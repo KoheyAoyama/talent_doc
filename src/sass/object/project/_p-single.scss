@@ -1,7 +1,7 @@
 @use "./foundation/colors";
 
 .p-single {
-    margin: 0 0 64px 0;
+    margin: 0 0 24px 0;
 
     &__title {
         margin: 0 0 36px 0;
@@ -21,6 +21,10 @@
 
     &__pageView {
         font-size: 1.4rem;
-        color: colors.$dark_026;
+        color: colors.$dark_054;
+    }
+
+    &__twitterShare {
+        margin: 0 0 24px 0;
     }
 }

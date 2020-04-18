@@ -307,7 +307,7 @@ img {
 }
 
 .p-single {
-  margin: 0 0 64px 0;
+  margin: 0 0 24px 0;
 }
 .p-single__title {
   margin: 0 0 36px 0;
@@ -324,7 +324,10 @@ img {
 }
 .p-single__pageView {
   font-size: 1.4rem;
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.54);
+}
+.p-single__twitterShare {
+  margin: 0 0 24px 0;
 }
 
 .talentList__title {
