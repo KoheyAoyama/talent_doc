@@ -17,6 +17,35 @@ if (!function_exists('render_blade')) {
 }
 
 /*----------------------------------------
+Custom post types
+----------------------------------------*/
+function talentDoc_custom_init() {
+  $labels = array(
+		'name'               => _x( 'Books', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Book', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( '管理人の備忘録', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( '管理人の備忘録', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( '明日に向かって打て', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( '熱い思いを語る', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Book', 'your-plugin-textdomain' ),
+		'edit_item'          => __( '編集すんのか？おん？', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Book', 'your-plugin-textdomain' ),
+		'all_items'          => __( '備忘録一覧', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Books', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'なんか書けよ、ほら', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( '塵ひとつねぇ無垢なトラッシュだぜ', 'your-plugin-textdomain' )
+  );
+  
+  $args = array(
+    'public' => true,
+    'labels'  => $labels
+  );
+  register_post_type( 'book', $args );
+}
+add_action( 'init', 'talentDoc_custom_init' );
+
+/*----------------------------------------
 Theme functions
 ----------------------------------------*/
 // Article excerpt setting
