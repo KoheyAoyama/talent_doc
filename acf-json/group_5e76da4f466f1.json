@@ -31,7 +31,7 @@
         },
         {
             "key": "field_5e9aa82dbfc82",
-            "label": "閲覧回数",
+            "label": "この記事が見られた回数だよん",
             "name": "page_view",
             "type": "number",
             "instructions": "",
@@ -68,5 +68,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1587281260
+    "modified": 1587281759
 }
