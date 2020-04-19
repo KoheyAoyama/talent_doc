@@ -31,7 +31,7 @@
         },
         {
             "key": "field_5e9aa82dbfc82",
-            "label": "ページビュー",
+            "label": "閲覧回数",
             "name": "page_view",
             "type": "number",
             "instructions": "",
