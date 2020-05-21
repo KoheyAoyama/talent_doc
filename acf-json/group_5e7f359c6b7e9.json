@@ -1,9 +1,9 @@
 {
-    "key": "group_5e74cb3fd3985",
+    "key": "group_5e7f359c6b7e9",
     "title": "タレント情報",
     "fields": [
         {
-            "key": "field_5e74cb5f98725",
+            "key": "field_5e7f35a1119d7",
             "label": "プロフィール画像",
             "name": "profile_img",
             "type": "image",
@@ -27,12 +27,12 @@
             "mime_types": ""
         },
         {
-            "key": "field_5e771c82a417a",
+            "key": "field_5e7f35d8119d8",
             "label": "所属事務所",
             "name": "talent_office",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -46,7 +46,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e7893d799e3a",
+            "key": "field_5e7f35f6119d9",
             "label": "受賞歴",
             "name": "award_history",
             "type": "textarea",
@@ -65,7 +65,7 @@
             "new_lines": ""
         },
         {
-            "key": "field_5e7b2deee8eb6",
+            "key": "field_5e7f361f119da",
             "label": "デビュー",
             "name": "date_of_debut",
             "type": "date_picker",
@@ -97,7 +97,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1587281148
+    "modified": 1587281591
 }
